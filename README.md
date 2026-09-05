@@ -67,7 +67,7 @@ These modifications change the inertial and contact properties of the system, cr
 The following figure illustrates the difference between the nominal source environment and the modified target domain used for transfer evaluation.
 
 <p align="center">
-  <img src="results/Comparison_SourceTarget.png" width="750">
+  <img src="results/Comparation_SourceTarget.png" width="750">
 </p>
 
 The policy is trained exclusively in the source environment and then evaluated in both the source and target domains to measure its ability to generalize under modified dynamics.
