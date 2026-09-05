@@ -1,0 +1,35 @@
+python train.py --train_env source --total_timesteps 500000 --seed 0
+
+Eval train(source) -> test(source): mean_return=1569.04 +/- 5.71
+Eval train(source) -> test(target): mean_return=835.23 +/- 17.87
+
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 \
+  --dr --dr_percent 0.2 --dr_thigh
+
+Eval train(source) -> test(source): mean_return=1381.00 +/- 184.36
+Eval train(source) -> test(target): mean_return=1039.34 +/- 28.70
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 \
+  --dr --dr_percent 0.2 --dr_leg
+Eval train(source) -> test(source): mean_return=1016.46 +/- 117.45
+Eval train(source) -> test(target): mean_return=708.15 +/- 14.81
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 \
+  --dr --dr_percent 0.2 --dr_foot
+Eval train(source) -> test(source): mean_return=1522.51 +/- 6.15
+Eval train(source) -> test(target): mean_return=1265.99 +/- 251.53
+
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 \
+  --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1543.24 +/- 11.28
+Eval train(source) -> test(target): mean_return=1320.41 +/- 109.04

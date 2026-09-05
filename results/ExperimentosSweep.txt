@@ -1,0 +1,47 @@
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.05 --dr_foot
+Eval train(source) -> test(source): mean_return=1322.95 +/- 137.51
+Eval train(source) -> test(target): mean_return=1004.11 +/- 39.23
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.10 --dr_foot
+Eval train(source) -> test(source): mean_return=1532.71 +/- 3.76
+Eval train(source) -> test(target): mean_return=1154.89 +/- 43.81
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.20 --dr_foot   # ya lo tienes
+Eval train(source) -> test(source): mean_return=1522.51 +/- 6.15
+Eval train(source) -> test(target): mean_return=1265.99 +/- 251.53
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.40 --dr_foot
+
+Eval train(source) -> test(source): mean_return=1678.00 +/- 15.27
+Eval train(source) -> test(target): mean_return=1104.57 +/- 71.16
+
+
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.05
+Eval train(source) -> test(source): mean_return=1627.41 +/- 9.54
+Eval train(source) -> test(target): mean_return=807.45 +/- 89.82
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.10
+al train(source) -> test(source): mean_return=1099.06 +/- 70.60
+Eval train(source) -> test(target): mean_return=883.98 +/- 19.04
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.20   # ya lo tienes
+Eval train(source) -> test(source): mean_return=1543.24 +/- 11.28
+Eval train(source) -> test(target): mean_return=1320.41 +/- 109.04
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.30
+Eval train(source) -> test(source): mean_return=1002.13 +/- 32.01
+Eval train(source) -> test(target): mean_return=694.77 +/- 2.30
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.40
+Eval train(source) -> test(source): mean_return=1208.24 +/- 22.17
+Eval train(source) -> test(target): mean_return=816.88 +/- 27.30

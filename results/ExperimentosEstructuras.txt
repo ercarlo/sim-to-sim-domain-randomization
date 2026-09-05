@@ -1,0 +1,52 @@
+policy_kwargs = dict(net_arch=[64, 64])
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1543.24 +/- 11.28
+Eval train(source) -> test(target): mean_return=1320.41 +/- 109.04
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 1 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1635.20 +/- 6.27
+Eval train(source) -> test(target): mean_return=951.22 +/- 7.06
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 2 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1476.26 +/- 182.36
+Eval train(source) -> test(target): mean_return=873.66 +/- 12.94
+
+
+
+
+policy_kwargs = dict(net_arch=[256, 256])
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1701.28 +/- 9.47
+Eval train(source) -> test(target): mean_return=1715.97 +/- 2.45
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 1 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1417.67 +/- 168.21
+Eval train(source) -> test(target): mean_return=1041.53 +/- 108.12
+
+
+
+python train.py --train_env source --total_timesteps 500000 --seed 2 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1691.46 +/- 9.88
+Eval train(source) -> test(target): mean_return=1123.58 +/- 58.14
+
+
+policy_kwargs = dict(net_arch=[128, 128])
+python train.py --train_env source --total_timesteps 500000 --seed 0 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1192.46 +/- 68.50
+Eval train(source) -> test(target): mean_return=1272.06 +/- 186.26
+
+python train.py --train_env source --total_timesteps 500000 --seed 1 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1649.74 +/- 2.49
+Eval train(source) -> test(target): mean_return=1667.59 +/- 9.07
+
+python train.py --train_env source --total_timesteps 500000 --seed 2 --dr --dr_percent 0.2
+Eval train(source) -> test(source): mean_return=1586.94 +/- 8.70
+Eval train(source) -> test(target): mean_return=762.00 +/- 19.93

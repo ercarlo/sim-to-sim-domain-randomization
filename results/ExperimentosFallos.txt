@@ -1,0 +1,34 @@
+===== Baseline (no DR) =====
+Timeout rate        : 0.0%
+Avg episode length  : 366.1
+Avg time-to-fail    : 366.1
+Avg min torso z     : 0.687
+Avg angle std       : 0.035
+Avg near-falls      : 3.3
+Avg forward velocity: 2.68
+
+===== DR all ±20% (best) =====
+Timeout rate        : 100.0%
+Avg episode length  : 3000.0
+Avg time-to-fail    : 3000.0
+Avg min torso z     : 0.978
+Avg angle std       : 0.020
+Avg near-falls      : 0.0
+Avg forward velocity: 2.67
+
+===== DR all ±40% =====
+Timeout rate        : 0.0%
+Avg episode length  : 463.9
+Avg time-to-fail    : 463.9
+Avg min torso z     : 0.686
+Avg angle std       : 0.062
+Avg near-falls      : 3.0
+Avg forward velocity: 2.78
+
+
+
+| Model       | Timeout % | Time-to-fail | Min torso z | Angle std | Near-falls | Fwd vel |
+| ----------- | --------: | -----------: | ----------: | --------: | ---------: | ------: |
+| No DR       |        0% |          366 |       0.687 |     0.035 |        3.3 |    2.68 |
+| DR all ±20% |  **100%** |     **3000** |   **0.978** | **0.020** |    **0.0** |    2.67 |
+| DR all ±40% |        0% |          464 |       0.686 |     0.062 |        3.0 |    2.78 |
